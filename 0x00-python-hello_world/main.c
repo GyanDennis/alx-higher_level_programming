@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
@@ -29,6 +30,8 @@ if (check_cycle(head) == 0)
 printf("Linked list has no cycle\n");
 else if (check_cycle(head) == 1)
 printf("Linked list has a cycle\n");
+else if (check_cycle(head) == 1)
+printf("Linked list has a cycle\n");
 
 current = head;
 for (i = 0; i < 4; i++)
@@ -48,5 +51,4 @@ current->next = temp;
 
 free_listint(head);
 return (0);
-
 }

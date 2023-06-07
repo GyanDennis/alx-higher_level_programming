@@ -1,4 +1,8 @@
 #include "lists.h"
+#include <stddef.h>
+#include "stdlib.h"
+#ifndef LISTS__H
+
 /**
  * insert_node - insert a number into a sorted singly linked list
  * @head: address of pointer to first node
@@ -6,6 +10,7 @@
  *
  * Return: pointer to inserted node
  */
+
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *p = NULL, *newNode = NULL;

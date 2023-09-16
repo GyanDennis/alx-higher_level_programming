@@ -13,5 +13,5 @@ if __name__ == "__main__":
     for row in rows:
         print(row)
     cur.close()
-    db.close()t add . && git commit -m "binary tree" && git push
+    db.close()t
 
